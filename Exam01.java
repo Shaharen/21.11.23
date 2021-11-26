@@ -3,42 +3,42 @@ import java.util.Scanner;
 public class Exam01 {
 
 	public static void main(String[] args) {
-		// ¾à¼ö ±¸ÇÏ±â
-		// 12 -> °á°ú : 12ÀÇ ¾à¼ö´Â 1 2 3 4 6 12 ÀÔ´Ï´Ù. Ãâ·Â
+		// ì•½ìˆ˜ êµ¬í•˜ê¸°
+		// 12 -> ê²°ê³¼ : 12ì˜ ì•½ìˆ˜ëŠ” 1 2 3 4 6 12 ì…ë‹ˆë‹¤. ì¶œë ¥
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Á¤¼ö ÀÔ·Â : ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥ : ");
 		int num = sc.nextInt();
 		// 1)
-		System.out.print(num + "ÀÇ ¾à¼ö´Â ");
+		System.out.print(num + "ì˜ ì•½ìˆ˜ëŠ” ");
 		for (int i = 1; i <= num; i++) {
 			if (num % i == 0) {
 				System.out.print(i + " ");
 			}
 		}
-		System.out.println("ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë‹ˆë‹¤.");
 
 		// 2)
-		System.out.print(num + "ÀÇ ¾à¼ö´Â ");
+		System.out.print(num + "ì˜ ì•½ìˆ˜ëŠ” ");
 		for (int i = 1; i < num; i++) {
 			if (num % i == 0) {
 				System.out.print(i + " , ");
 			}
 		}
 		System.out.print(num);
-		System.out.println("ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë‹ˆë‹¤.");
 
 		// 3)
-		System.out.print(num + "ÀÇ ¾à¼ö´Â ");
-		for (int i = 1; i <= num / 2; i++) {  // ¾à¼öÀÇ ¼ºÁú
+		System.out.print(num + "ì˜ ì•½ìˆ˜ëŠ” ");
+		for (int i = 1; i <= num / 2; i++) {  // ì•½ìˆ˜ì˜ ì„±ì§ˆ
 			if (num % i == 0) {
 				System.out.print(i + " , ");
 			}
 		}
 		System.out.print(num);
-		System.out.println("ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë‹ˆë‹¤.");
 
 	}
-
+ 
 }
